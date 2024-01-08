@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  .sellingNav {
+    display: flex;
+    align-items: center;
+    min-height: 70px;
+    justify-content: space-between;
+    width: 100%;
+    .socialMedia {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 10px;
+      i {
+        border: 1px solid #f1f1f1;
+        border-radius: 50%;
+        font-size: 13px;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000;
+        color: white;
+
+        &:hover {
+          color: #f16821;
+        }
+      }
+    }
+    .contact {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 10px;
+      .phone {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        h5 {
+          font-size: 17px;
+          font-weight: 400;
+        }
+        i {
+          color: #f16821;
+          &:hover {
+            color: black;
+          }
+        }
+      }
+      .mail {
+        gap: 5px;
+        display: flex;
+        align-items: center;
+        h5 {
+          font-size: 17px;
+          font-weight: 400;
+        }
+        i {
+          color: #f16821;
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  .elementsNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 69px;
+    width: 100%;
+    .logoTxt {
+      font-size: 50px;
+      font-weight: 800;
+    }
+    .collapseDiv {
+      justify-content: flex-end;
+      ul {
+        gap: 20px;
+        font-weight: 500;
+        font-size: 17px;
+        color: #000;
+        & :hover {
+          color: #f16821;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  header {
+    h5 {
+      display: none;
+    }
+  }
+}
+#shopWithUs {
+  width: 100%;
+  min-height: 650px;
+  background-image: url("/assets/img/hero_2.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-attachment: fixed;
+  h1 {
+    font-size: 80px;
+    color: white;
+    font-weight: 700;
+  }
+  p {
+    color: white;
+    font-size: 20px;
+  }
+  .shopBtn {
+    width: 170px;
+    height: 50px;
+    background: transparent;
+    border-color: white;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    &:hover {
+      background-color: #f1f1f1;
+      color: #000;
+    }
+  }
+  .clubBtn {
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    border-color: white;
+
+    &:hover {
+      background: transparent;
+      color: white;
+      border-color: white;
+    }
+  }
+}
+
+#ourProducts {
+  width: 100%;
+  margin-top: 6%;
+  text-align: center;
+  .ourTxt {
+    text-align: center;
+    h6 {
+      font-weight: 600;
+      color: #bfb5bd;
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+    p {
+      color: #bfb5bd;
+    }
+  }
+  .col-12 {
+    width: 400px;
+    display: flex;
+
+    button {
+      width: 130px;
+      height: 50px;
+      background-color: black;
+      color: white;
+      border: none;
+      &:hover {
+        background-color: #bfb5bd;
+        color: white;
+        border: none;
+      }
+    }
+  }
+
+  #product {
+    margin: 3%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-weight: 600;
+    color: rgb(157, 157, 157);
+    flex-wrap: wrap;
+    .boxs {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    .divz {
+      width: 100%;
+
+      button {
+        width: 100px;
+        height: 50px;
+        background-color: black;
+        color: white;
+        border: none;
+        margin-bottom: 10px;
+        &:hover {
+          background-color: #bfb5bd;
+          color: black;
+        }
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .divc {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  #load {
+    width: 130px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    &:hover {
+      background-color: #bfb5bd;
+      color: white;
+    }
+    margin: 3%;
+  }
+}
+
+#aboutUs {
+  margin-top: 6%;
+  .col-xl-8 {
+    img {
+      width: 100%;
+    }
+  }
+  .col-xl-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h6 {
+      color: #bfb5bd;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 40px;
+    }
+    p {
+      color: #bfb5bd;
+    }
+    button {
+      width: 120px;
+      height: 30px;
+      background-color: #000;
+      border: none;
+      color: white;
+      font-weight: 700;
+      &:hover {
+        background: transparent;
+        color: #000;
+        border-color: #000;
+      }
+    }
+  }
+}
+
+#leadership {
+  width: 100%;
+  margin-top: 6%;
+  min-height: 650px;
+  .leaderTxt {
+    text-align: center;
+    h6 {
+      color: #bfb5bd;
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+  .col-xl-4 {
+    text-align: center;
+    img {
+      width: 70%;
+    }
+    h2 {
+      font-size: 18px;
+      color: #bfb5bd;
+    }
+    h6 {
+      font-weight: 400;
+      color: #bfb5bd;
+      font-size: 16px;
+    }
+    p {
+      color: #bfb5bd;
+    }
+    .socialMedia {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      i {
+        border: 1px solid #f1f1f1;
+        border-radius: 50%;
+        font-size: 13px;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #bfb5bd;
+        color: white;
+
+        &:hover {
+          background-color: #000;
+        }
+      }
+    }
+  }
+}
+
+#getInTouch {
+  width: 100%;
+  margin-top: 3%;
+  background-color: #f8f9fa;
+  min-height: 650px;
+  display: flex;
+  justify-content: center;
+  .getTxt {
+    text-align: center;
+    h6 {
+      color: #bfb5bd;
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+  .getForm {
+    background-color: white;
+    width: fit-content;
+    margin: auto;
+  }
+  button {
+    width: 150px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 0;
+    color: white;
+    border-color: black;
+    font-weight: 600;
+    &:hover {
+      background-color: white;
+      color: #000;
+    }
+  }
+}
+
+footer {
+  color: black;
+  text-align: center;
+  width: 100%;
+  min-height: 150px;
+  padding-top: 20px;
+}
+
+//BASKET  wishlist//
+
+#productz {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  height: auto;
+  font-weight: 600;
+  color: rgb(157, 157, 157);
+  flex-wrap: wrap;
+
+  .divz {
+    width: 300px;
+    img {
+      width: 100%;
+    }
+    .divc {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    button {
+      width: 130px;
+      height: 50px;
+      background-color: black;
+      color: white;
+      border: none;
+      &:hover {
+        background-color: #bfb5bd;
+        color: black;
+      }
+      margin: 3%;
+    }
+  }
+}
+
+@media (max-width: 772px) {
+  #disp {
+    display: none;
+  }
+  header .sellingNav {
+    display: none;
+  }
+  #ourProducts .col-12 {
+    flex-wrap: wrap;
+  }
+}

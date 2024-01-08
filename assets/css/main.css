@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .sellingNav {
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+  justify-content: space-between;
+  width: 100%;
+}
+header .sellingNav .socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+header .sellingNav .socialMedia i {
+  border: 1px solid #f1f1f1;
+  border-radius: 50%;
+  font-size: 13px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: white;
+}
+header .sellingNav .socialMedia i:hover {
+  color: #f16821;
+}
+header .sellingNav .contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+header .sellingNav .contact .phone {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+header .sellingNav .contact .phone h5 {
+  font-size: 17px;
+  font-weight: 400;
+}
+header .sellingNav .contact .phone i {
+  color: #f16821;
+}
+header .sellingNav .contact .phone i:hover {
+  color: black;
+}
+header .sellingNav .contact .mail {
+  gap: 5px;
+  display: flex;
+  align-items: center;
+}
+header .sellingNav .contact .mail h5 {
+  font-size: 17px;
+  font-weight: 400;
+}
+header .sellingNav .contact .mail i {
+  color: #f16821;
+}
+header .sellingNav .contact .mail i:hover {
+  color: black;
+}
+header .elementsNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 69px;
+  width: 100%;
+}
+header .elementsNav .logoTxt {
+  font-size: 50px;
+  font-weight: 800;
+}
+header .elementsNav .collapseDiv {
+  justify-content: flex-end;
+}
+header .elementsNav .collapseDiv ul {
+  gap: 20px;
+  font-weight: 500;
+  font-size: 17px;
+  color: #000;
+}
+header .elementsNav .collapseDiv ul :hover {
+  color: #f16821;
+}
+
+@media screen and (max-width: 991px) {
+  header h5 {
+    display: none;
+  }
+}
+#shopWithUs {
+  width: 100%;
+  min-height: 650px;
+  background-image: url("/assets/img/hero_2.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-attachment: fixed;
+}
+#shopWithUs h1 {
+  font-size: 80px;
+  color: white;
+  font-weight: 700;
+}
+#shopWithUs p {
+  color: white;
+  font-size: 20px;
+}
+#shopWithUs .shopBtn {
+  width: 170px;
+  height: 50px;
+  background: transparent;
+  border-color: white;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+#shopWithUs .shopBtn:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
+#shopWithUs .clubBtn {
+  width: 200px;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  border-color: white;
+}
+#shopWithUs .clubBtn:hover {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+#ourProducts {
+  width: 100%;
+  margin-top: 6%;
+  text-align: center;
+}
+#ourProducts .ourTxt {
+  text-align: center;
+}
+#ourProducts .ourTxt h6 {
+  font-weight: 600;
+  color: #bfb5bd;
+}
+#ourProducts .ourTxt h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#ourProducts .ourTxt p {
+  color: #bfb5bd;
+}
+#ourProducts .col-12 {
+  width: 400px;
+  display: flex;
+}
+#ourProducts .col-12 button {
+  width: 130px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+#ourProducts .col-12 button:hover {
+  background-color: #bfb5bd;
+  color: white;
+  border: none;
+}
+#ourProducts #product {
+  margin: 3%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  font-weight: 600;
+  color: rgb(157, 157, 157);
+  flex-wrap: wrap;
+}
+#ourProducts #product .boxs {
+  width: 100%;
+  flex-wrap: wrap;
+}
+#ourProducts #product .divz {
+  width: 100%;
+}
+#ourProducts #product .divz button {
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+}
+#ourProducts #product .divz button:hover {
+  background-color: #bfb5bd;
+  color: black;
+}
+#ourProducts #product .divz img {
+  width: 100%;
+  height: auto;
+}
+#ourProducts #product .divz .divc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#ourProducts #load {
+  width: 130px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin: 3%;
+}
+#ourProducts #load:hover {
+  background-color: #bfb5bd;
+  color: white;
+}
+
+#aboutUs {
+  margin-top: 6%;
+}
+#aboutUs .col-xl-8 img {
+  width: 100%;
+}
+#aboutUs .col-xl-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#aboutUs .col-xl-4 h6 {
+  color: #bfb5bd;
+}
+#aboutUs .col-xl-4 h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+#aboutUs .col-xl-4 p {
+  color: #bfb5bd;
+}
+#aboutUs .col-xl-4 button {
+  width: 120px;
+  height: 30px;
+  background-color: #000;
+  border: none;
+  color: white;
+  font-weight: 700;
+}
+#aboutUs .col-xl-4 button:hover {
+  background: transparent;
+  color: #000;
+  border-color: #000;
+}
+
+#leadership {
+  width: 100%;
+  margin-top: 6%;
+  min-height: 650px;
+}
+#leadership .leaderTxt {
+  text-align: center;
+}
+#leadership .leaderTxt h6 {
+  color: #bfb5bd;
+}
+#leadership .leaderTxt h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#leadership .col-xl-4 {
+  text-align: center;
+}
+#leadership .col-xl-4 img {
+  width: 70%;
+}
+#leadership .col-xl-4 h2 {
+  font-size: 18px;
+  color: #bfb5bd;
+}
+#leadership .col-xl-4 h6 {
+  font-weight: 400;
+  color: #bfb5bd;
+  font-size: 16px;
+}
+#leadership .col-xl-4 p {
+  color: #bfb5bd;
+}
+#leadership .col-xl-4 .socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#leadership .col-xl-4 .socialMedia i {
+  border: 1px solid #f1f1f1;
+  border-radius: 50%;
+  font-size: 13px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bfb5bd;
+  color: white;
+}
+#leadership .col-xl-4 .socialMedia i:hover {
+  background-color: #000;
+}
+
+#getInTouch {
+  width: 100%;
+  margin-top: 3%;
+  background-color: #f8f9fa;
+  min-height: 650px;
+  display: flex;
+  justify-content: center;
+}
+#getInTouch .getTxt {
+  text-align: center;
+}
+#getInTouch .getTxt h6 {
+  color: #bfb5bd;
+}
+#getInTouch .getTxt h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#getInTouch .getForm {
+  background-color: white;
+  width: fit-content;
+  margin: auto;
+}
+#getInTouch button {
+  width: 150px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 0;
+  color: white;
+  border-color: black;
+  font-weight: 600;
+}
+#getInTouch button:hover {
+  background-color: white;
+  color: #000;
+}
+
+footer {
+  color: black;
+  text-align: center;
+  width: 100%;
+  min-height: 150px;
+  padding-top: 20px;
+}
+
+#productz {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  height: auto;
+  font-weight: 600;
+  color: rgb(157, 157, 157);
+  flex-wrap: wrap;
+}
+#productz .divz {
+  width: 300px;
+}
+#productz .divz img {
+  width: 100%;
+}
+#productz .divz .divc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#productz .divz button {
+  width: 130px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin: 3%;
+}
+#productz .divz button:hover {
+  background-color: #bfb5bd;
+  color: black;
+}
+
+@media (max-width: 772px) {
+  #disp {
+    display: none;
+  }
+  header .sellingNav {
+    display: none;
+  }
+  #ourProducts .col-12 {
+    flex-wrap: wrap;
+  }
+}
